@@ -18,7 +18,7 @@ dependencies:
   # Pin ros2_controllers to an earlier version (more) compatible with Mirte
   - ros-humble-ros2-controllers>=2.0,<3.0
   - ros-humble-gazebo-ros2-control
-  - ros-humble-mecanum-drive-controller>=2.0,<2.48
+  - ros-humble-mecanum-drive-controller>=2.0,<3.0
   - ros-humble-joint-trajectory-controller>=2.0,<3.0
   - ros-humble-pid-controller>=2.0,<3.0
 

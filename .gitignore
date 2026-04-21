@@ -13,5 +13,5 @@ __pycache__/
 .conda/
 
 # Trained model files and weights
-*.onnx
-*.pt
+# *.onnx
+# *.pt

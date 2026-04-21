@@ -37,6 +37,6 @@ ros2 launch mirte_gazebo gazebo_mirte_master_empty.launch.xml
 
 Or the greenhouse world:
 First set the apriltags path - check this is initialized correctly first! 
-export GAZEBO_MODEL_PATH="$GAZEBO_MODEL_PATH:$ws/src/gazebo_apriltag/models"
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/daniel/Documents/GitHub/MDP/mdp_ws/src/gazebo_apriltag/models
 source install/setup.bash
-ros2 launch mirte_gazebo gazebo_mirte_master_empty.launch.xml world:=worlds/greenhouse.world
+ros2 launch mirte_gazebo gazebo_mirte_master_empty.launch.xml world:=/home/daniel/Documents/GitHub/MDP/mdp_ws/src/mdp_worlds/worlds/greenhouse.world
