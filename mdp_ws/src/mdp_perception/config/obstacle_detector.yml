@@ -1,0 +1,11 @@
+# Parameters for the object detector node
+object_detector_node:
+  ros__parameters:
+    # The model is assumed to be in the models folder, only specify the name of which model to use.
+    model_filename: "yolov8n.onnx"
+
+    confidence_threshold: 0.6
+    target_device: "cpu" # or "cuda"
+    
+    image_topic: "/image_raw"
+    publish_annotated_image: true

@@ -1,0 +1,66 @@
+# environment_ros.yml
+
+channels:
+  - robostack-humble
+  - conda-forge
+dependencies:
+  # --- Build Tools for C++ ---
+  - compilers 
+  # Use 3.29 to avoid errors with cmake 4 broken backwards compat given mirte packages use <4. 
+  - cmake=3.29 
+  # Use setuptools 79.0.1 to avoid errors with setup.py --editable install
+  - conda-forge::setuptools=79.0.1
+
+  # ROS Dependencies pt 1: definitely necessary from trying to build and run the mire gazebo sim and failing without these
+  - ros-humble-gazebo-ros-pkgs
+  - ros-humble-color-util
+
+  # Pin ros2_controllers to an earlier version (more) compatible with Mirte
+  - ros-humble-ros2-controllers>=2.0,<3.0
+  - ros-humble-gazebo-ros2-control
+  - ros-humble-mecanum-drive-controller>=2.0,<2.48
+  - ros-humble-joint-trajectory-controller>=2.0,<3.0
+  - ros-humble-pid-controller>=2.0,<3.0
+
+  # ROS Dependencies pt 2. maybe not all necessary but may be useful in the future
+  - ros-humble-usb-cam
+  - ros-humble-navigation2
+  - ros-humble-nav2-bringup
+  - ros-humble-slam-toolbox
+  - ros-humble-moveit
+  - ros-humble-perception-pcl
+  - ros-humble-rosbag2-storage-mcap
+  - ros-humble-rmw-cyclonedds-cpp
+  - ros-humble-robot-localization
+  - ros-humble-foxglove-bridge
+  - ros-humble-xacro
+  - ros-humble-robot-state-publisher
+  - ros-humble-tf2-ros
+  - ros-humble-tf2-geometry-msgs
+  - ros-humble-vision-msgs
+  - ros-humble-apriltag-msgs
+  - ros-humble-gazebo-ros-pkgs
+  - ros-humble-twist-mux
+  - ros-humble-teleop-twist-keyboard
+  - ros-humble-ros2-control
+
+  # C++ ROS Libraries 
+  - ros-humble-rclcpp   
+  - ros-humble-rclcpp-components 
+  - ros-humble-cv-bridge     
+  - ros-humble-image-transport   
+  - ros-humble-apriltag-ros    
+
+  # Python dependencies
+  - opencv
+  - open3d
+  - onnxruntime 
+  - colcon-common-extensions
+
+  # tool recommended in mirte gazebo repo to pull in other repos
+  - vcstool 
+
+  - pip:
+    - ultralytics
+    - transforms3d
+    - pupil-apriltags

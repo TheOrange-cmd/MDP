@@ -1,0 +1,7 @@
+name: ros_env
+channels:
+  - robostack-humble
+  - conda-forge
+dependencies:
+  - python=3.11
+  - ros-humble-desktop

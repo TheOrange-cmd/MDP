@@ -1,0 +1,14 @@
+[submodule "mdp_ws/src/gazebo_apriltag"]
+	path = mdp_ws/src/gazebo_apriltag
+	url = https://github.com/koide3/gazebo_apriltag.git
+[submodule "mdp_ws/src/mirte-ros-packages"]
+	path = mdp_ws/src/mirte-ros-packages
+	url = https://github.com/TheOrange-cmd/mirte-ros-packages
+	branch = develop
+[submodule "mdp_ws/src/mirte-gazebo"]
+	path = mdp_ws/src/mirte-gazebo
+	url = https://github.com/mirte-robot/mirte-gazebo
+[submodule "mdp_ws/src/gazebo_grasp_fix"]
+	path = mdp_ws/src/gazebo_grasp_fix
+	url = https://github.com/RCPRG-ros-pkg/gazebo-grasp-plugin
+	branch = humble-grasp-fix

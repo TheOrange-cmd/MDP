@@ -1,0 +1,17 @@
+# ROS 2 workspaces
+mdp_ws/build/
+mdp_ws/install/
+mdp_ws/log/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+
+# Mamba/Conda
+.mamba/
+.conda/
+
+# Trained model files and weights
+*.onnx
+*.pt

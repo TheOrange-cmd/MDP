@@ -1,0 +1,22 @@
+# mdp_ws/src/mdp_perception/config/perception.yml
+usb_cam:
+  ros__parameters:
+    video_device: '/dev/video4'
+    image_width: 640
+    image_height: 480
+    pixel_format: 'yuyv'
+    topic_name: '/image_raw'
+
+object_detector_node:
+  ros__parameters:
+    model_filename: "yolov8n.onnx"
+    confidence_threshold: 0.6
+    target_device: "cpu"
+    image_topic: '/image_raw'
+    publish_annotated_image: true
+
+apriltag_detector_node:
+  ros__parameters:
+    tag_family: 'tag36h11'
+    image_topic: '/image_raw'
+    publish_annotated_image: true
