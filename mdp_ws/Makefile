@@ -1,6 +1,6 @@
 # Makefile
 sim:
-	colcon build --symlink-install --packages-skip mirte_telemetrix_cpp --packages-skip-by-dep mirte_telemetrix_cpp
+	colcon build --symlink-install --packages-skip mirte_telemetrix_cpp --packages-skip-by-dep mirte_telemetrix_cpp --continue-on-error
 
 robot:
 	colcon build --symlink-install

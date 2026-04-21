@@ -3,6 +3,9 @@ mdp_ws/build/
 mdp_ws/install/
 mdp_ws/log/
 
+# Cmake files
+CMakeFiles/
+
 # Python artifacts
 __pycache__/
 *.pyc
