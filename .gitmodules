@@ -1,6 +1,6 @@
 [submodule "mdp_ws/src/gazebo_apriltag"]
 	path = mdp_ws/src/gazebo_apriltag
-	url = https://github.com/koide3/gazebo_apriltag.git
+	url = https://github.com/koide3/gazebo_apriltag
 [submodule "mdp_ws/src/mirte-ros-packages"]
 	path = mdp_ws/src/mirte-ros-packages
 	url = https://github.com/TheOrange-cmd/mirte-ros-packages
