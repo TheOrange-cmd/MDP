@@ -7,7 +7,7 @@
 	branch = develop
 [submodule "mdp_ws/src/mirte-gazebo"]
 	path = mdp_ws/src/mirte-gazebo
-	url = https://github.com/mirte-robot/mirte-gazebo
+	url = https://github.com/TheOrange-cmd/mirte-gazebo
 [submodule "mdp_ws/src/gazebo_grasp_fix"]
 	path = mdp_ws/src/gazebo_grasp_fix
 	url = https://github.com/RCPRG-ros-pkg/gazebo-grasp-plugin
