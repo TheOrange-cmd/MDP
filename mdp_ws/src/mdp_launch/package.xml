@@ -1,16 +1,18 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>mdp_worlds</name>
+  <name>mdp_launch</name>
   <version>0.0.1</version>
-  <description>World and model files for the MDP greenhouse robot project</description>
+  <description>Top-level launch files for the MDP greenhouse robot project</description>
   <maintainer email="your@email.com">Your Name</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>gazebo_msgs</exec_depend>
+  <exec_depend>mirte_gazebo</exec_depend>
+  <exec_depend>mdp_perception</exec_depend>
+  <exec_depend>mdp_worlds</exec_depend>
+  <exec_depend>rviz2</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
